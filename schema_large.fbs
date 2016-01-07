@@ -1,0 +1,138 @@
+// example IDL file
+
+namespace MyGame;
+
+attribute "priority";
+
+enum Color : byte { Red = 1, Green, Blue }
+
+struct Vec3 {
+	x:float;
+	y:float;
+	z:float;
+}
+
+union Any { Weapon, Pickup }
+
+table Weapon {
+	name: string;
+	damage: short = 100;
+}
+
+table Pickup {
+	name: string;
+	damage: short = 200;
+}
+
+table Monster {
+	pos:Vec3;
+	mana:short = 150;
+	hp:short = 100;
+	name:string;
+	friendly:bool = false (deprecated, priority: 1);
+	inventory:[ubyte];
+	color:Color = Blue;
+	owns:[Monster];
+	custom1:Any;
+	custom2:Any;
+	custom3:Any;
+	custom4:Any;
+	custom5:Any;
+	custom6:Any;
+	custom7:Any;
+	custom8:Any;
+	custom9:Any;
+	custom10:Any;
+	custom11:Any;
+	custom12:Any;
+	custom13:Any;
+	custom14:Any;
+	custom15:Any;
+	custom16:Any;
+	custom17:Any;
+	custom18:Any;
+	custom19:Any;
+	custom20:Any;
+	custom21:Any;
+	custom22:Any;
+	custom23:Any;
+	custom24:Any;
+	custom25:Any;
+	custom26:Any;
+	custom27:Any;
+	custom28:Any;
+	custom29:Any;
+	custom30:Any;
+	custom31:Any;
+	custom32:Any;
+	custom33:Any;
+	custom34:Any;
+	custom35:Any;
+	custom36:Any;
+	custom37:Any;
+	custom38:Any;
+	custom39:Any;
+	custom40:Any;
+	custom41:Any;
+	custom42:Any;
+	custom43:Any;
+	custom44:Any;
+	custom45:Any;
+	custom46:Any;
+	custom47:Any;
+	custom48:Any;
+	custom49:Any;
+	custom50:Any;
+	custom51:Any;
+	custom52:Any;
+	custom53:Any;
+	custom54:Any;
+	custom55:Any;
+	custom56:Any;
+	custom57:Any;
+	custom58:Any;
+	custom59:Any;
+	custom60:Any;
+	custom61:Any;
+	custom62:Any;
+	custom63:Any;
+	custom64:Any;
+	custom65:Any;
+	custom66:Any;
+	custom67:Any;
+	custom68:Any;
+	custom69:Any;
+	custom70:Any;
+	custom71:Any;
+	custom72:Any;
+	custom73:Any;
+	custom74:Any;
+	custom75:Any;
+	custom76:Any;
+	custom77:Any;
+	custom78:Any;
+	custom79:Any;
+	custom80:Any;
+	custom81:Any;
+	custom82:Any;
+	custom83:Any;
+	custom84:Any;
+	custom85:Any;
+	custom86:Any;
+	custom87:Any;
+	custom88:Any;
+	custom89:Any;
+	custom90:Any;
+	custom91:Any;
+	custom92:Any;
+	custom93:Any;
+	custom94:Any;
+	custom95:Any;
+	custom96:Any;
+	custom97:Any;
+	custom98:Any;
+	custom99:Any;
+	custom100:Any;
+}
+
+root_type Monster;
