@@ -4,7 +4,7 @@ flatc -o ./lib/ -s schema.fbs
 
 mkdir -p results
 
-for t in json flatbuffers
+for t in json flatbuffers flatbuffers_randomized
 do
 	echo "Running tests for ${t}"
 	node tests/${t}.js \
